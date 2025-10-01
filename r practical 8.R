@@ -76,12 +76,13 @@ d3 <- d3[-c(1,2)]
 d3
 
 
-var_variable <- sum(k1*d1[-c(1:2)]^2 + k2*d2^2 + k3*d3^2)/length(d3)
-var_variable
+var_variate <- sum(k1*d1[-c(1:2)]^2 + k2*d2^2 + k3*d3^2)/length(d3)
+var_variate
 
 ## combine results 
 result <- data.frame(
-  Method = c("Decomposition","Regression Residuals","Moving Average","Differencing", "Variable Difference"),
-  Variance = c(var_decompose,var_regression,var_moving_average,var_diff,var_variable)
+  Method = c("Decomposition","Regression Residuals","Moving Average","Arima Residuals", "Differencing", "Variate Difference"),
+  Variance = c(var_decompose,var_regression,var_moving_average,var_diff,var_arima,var_variate)
 )
 result
+
