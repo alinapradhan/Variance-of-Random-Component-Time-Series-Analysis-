@@ -4,7 +4,7 @@
 This repository contains R code for **calculating the variance of the random component in a time series** using different statistical methods, including the **variance difference method**.
 
 ---
-
+ 
 ##  Objective
 To demonstrate multiple approaches for estimating the variance of the random component in a time series dataset, including:
 - Classical decomposition
