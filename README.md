@@ -5,7 +5,7 @@ This repository contains R code for **calculating the variance of the random com
 
 ---
 
-## 📌 Objective
+##  Objective
 To demonstrate multiple approaches for estimating the variance of the random component in a time series dataset, including:
 - Classical decomposition
 - Regression residuals
@@ -16,7 +16,7 @@ To demonstrate multiple approaches for estimating the variance of the random com
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 Make sure you have R installed. You will also need the following packages:
 
 ```r
@@ -29,7 +29,7 @@ install.packages("forecast")
 
 ---
 
-## 📊 Methods Used
+## Methods Used
 
 1. **Classical Decomposition**
    Breaks the series into trend, seasonal, and random components, then calculates the variance of the random part.
@@ -66,7 +66,7 @@ install.packages("forecast")
 
 ---
 
-## 📌 Notes
+## Notes
 
 * Example time series data is quarterly (12 values).
 * You can replace `ts_data` with your own dataset for analysis.
@@ -74,7 +74,7 @@ install.packages("forecast")
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License – feel free to use and modify for learning or research purposes.
 
