@@ -43,7 +43,7 @@ diff_ts
 var_diff <- var(diff_ts,na.rm=TRUE)
 var_diff
 
-## 5.ARIMA rESIDUAL 
+## 5.ARIMA RESIDUAL 
 library(forecast)# for auto arima
 fit <- auto.arima(ts_data)
 var_arima <- var(residuals(fit))
@@ -81,7 +81,8 @@ var_variable
 
 ## combine results 
 result <- data.frame(
-  Method = c("Decomposition","Regression Residuals","Moving Average","Differencing", "Variable Difference"),
-  Variance = c(var_decompose,var_regression,var_moving_average,var_diff,var_variable)
+  Method = c("Decomposition","Regression Residuals","Moving Average","Differencing","Arima Residuals", "Variate Difference"),
+  Variance = c(var_decompose,var_regression,var_moving_average,var_arima,var_diff,var_variate)
 )
 result
+
